@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+  }
+  body{
+    background: rgb(255, 255, 255);
+  }
+  header{
+    background: background;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px rgb(155, 155, 155);
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: grey;
+    width: 100vw;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+
+  .logo{
+      height: 50px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    header{
+      font-size: 1.2rem;
+    }
+  }
+
+  

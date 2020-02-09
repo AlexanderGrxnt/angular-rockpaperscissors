@@ -1,0 +1,41 @@
+
+
+.start-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: unquote("-webkit-calc(100vh - 60px)");
+    padding-bottom: 100px;
+
+    
+    .name-form{
+        background-color: background;
+        padding: 30px;
+
+        .enter-name{
+            font-size: 1.5rem;
+            padding-bottom: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        input{
+            height: 2rem;
+            padding-left: 10px;
+            
+        }
+
+        button{
+            height: 2rem;
+            padding: 5px 10px;
+            font-weight: 600;
+            color: rgb(53, 53, 53);
+        }
+
+        
+
+
+    }
+    
+}
