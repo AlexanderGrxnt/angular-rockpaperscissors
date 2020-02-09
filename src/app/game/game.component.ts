@@ -23,16 +23,16 @@ export class GameComponent implements OnInit {
     'scissors'
   ];
 
-  name;
+  userName;
   state$: Observable<object>;
 
   constructor(private location:Location, public router: Router){}
 
   ngOnInit(){
-    this.name = history.state;
+    this.userName = history.state;
     // this.state$ = this.activatedRoute.paramMap
     // .pipe(map(() => window.history.state))
-    console.log(name);
+    console.log(this.userName);
   }
 
   userPick(userItems: string): void {

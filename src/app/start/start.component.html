@@ -4,8 +4,8 @@
 
     <div class="name-form">
         <h3 class="enter-name">Enter Name:</h3>
-        <input name="nameInput" placeholder="Type name here" >
-        <button class="button" [routerLink] = "['/game']" [state]="{name:'test'}">Begin</button>
+        <input name="nameInput" (keyup)="onKey($event)" placeholder="Type name here" >
+        <button class="button" [routerLink] = "['/game']" [state]="{name:userName}">Begin</button>
 
     </div>
     
