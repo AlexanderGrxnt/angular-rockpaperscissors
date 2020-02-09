@@ -1,6 +1,9 @@
 {
   "name": "angular-rockpaperscissors",
   "version": "0.0.0",
+  "outputPath": "wwwroot/dist",
+  "baseHref": "/dist/",
+  "deployUrl": "/dist/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

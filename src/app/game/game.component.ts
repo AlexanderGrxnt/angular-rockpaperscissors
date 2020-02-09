@@ -43,7 +43,7 @@ export class GameComponent implements OnInit {
       this.compSelected = this.compItems[randomNum];
       console.log(this.compSelected);
       this.checkResult();
-    }, 1000);
+    }, 500);
   }
 
   clearField() {
@@ -52,7 +52,7 @@ export class GameComponent implements OnInit {
       this.userSelected = '';
       this.compSelected = '';
       this.round ++;
-    }, 2500);
+    }, 2000);
   }
 
   win(user, comp) {
@@ -61,7 +61,7 @@ export class GameComponent implements OnInit {
     this.compSelected = comp;
     this.action = 'beats';
     this.status = '. You win!';
-    if(this.round >= 3)
+    if(this.round >= 10)
       this.router.navigateByUrl('/results');
     else
       this.clearField();
@@ -73,7 +73,7 @@ export class GameComponent implements OnInit {
     this.compSelected = comp;
     this.action = 'loses to';
     this.status = '. You lose!';
-    if(this.round >= 3)
+    if(this.round >= 10)
       this.router.navigateByUrl('/results');
     else
       this.clearField();
@@ -84,7 +84,7 @@ export class GameComponent implements OnInit {
     this.compSelected = comp;
     this.action = 'and';
     this.status = '. You draw!';
-    if(this.round >= 3)
+    if(this.round >= 10)
       this.router.navigateByUrl('/results');
     else
       this.clearField();
